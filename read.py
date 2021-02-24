@@ -6,5 +6,10 @@ with open('reviews.txt', 'r') as f:
 		count += 1
 		if count % 1000 == 0:
 			print(len(data))
-print(len(data))
-print(data[0])
+print('Read Completed, There are total: ', len(data), 'data')
+
+sun_len = 0
+for d in data:
+	sun_len += len(d)
+
+print(sun_len/len(data))
