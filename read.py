@@ -11,5 +11,10 @@ print('Read Completed, There are total: ', len(data), 'data')
 sun_len = 0
 for d in data:
 	sun_len += len(d)
-
 print(sun_len/len(data))
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('There is total ',len(new), 'review less than 100 words')
